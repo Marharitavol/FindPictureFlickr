@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232FCAA5B7633C16AE56E8D5 /* Pods_FindPictureFlickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23556B71E1BB3CD2C17B437F /* Pods_FindPictureFlickr.framework */; };
 		5C1C39532790A7B400748A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39522790A7B400748A14 /* AppDelegate.swift */; };
 		5C1C39552790A7B400748A14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39542790A7B400748A14 /* SceneDelegate.swift */; };
 		5C1C39572790A7B400748A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39562790A7B400748A14 /* ViewController.swift */; };
-		5C1C395A2790A7B400748A14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C39582790A7B400748A14 /* Main.storyboard */; };
-		5C1C395C2790A7B700748A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C395B2790A7B700748A14 /* Assets.xcassets */; };
 		5C1C395F2790A7B700748A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C395D2790A7B700748A14 /* LaunchScreen.storyboard */; };
+		5C1C39742790B26D00748A14 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39732790B26D00748A14 /* TableViewCell.swift */; };
+		5C5F98F4279468000052F6E8 /* SaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F98F3279468000052F6E8 /* SaveModel.swift */; };
+		5CB845652791DCB3006E2852 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB845642791DCB3006E2852 /* Model.swift */; };
+		5CB8456A27921AC7006E2852 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8456927921AC7006E2852 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23556B71E1BB3CD2C17B437F /* Pods_FindPictureFlickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindPictureFlickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1C394F2790A7B400748A14 /* FindPictureFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindPictureFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1C39522790A7B400748A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C1C39542790A7B400748A14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5C1C39562790A7B400748A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C1C39592790A7B400748A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C1C395B2790A7B700748A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C1C395E2790A7B700748A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C1C39602790A7B700748A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1C39732790B26D00748A14 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5C5F98F3279468000052F6E8 /* SaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveModel.swift; sourceTree = "<group>"; };
+		5CB845642791DCB3006E2852 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5CB8456927921AC7006E2852 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B456883FABF5EEC20A7DE140 /* Pods-FindPictureFlickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindPictureFlickr.debug.xcconfig"; path = "Target Support Files/Pods-FindPictureFlickr/Pods-FindPictureFlickr.debug.xcconfig"; sourceTree = "<group>"; };
+		B7BD5DCFBBAFC456DF151E91 /* Pods-FindPictureFlickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindPictureFlickr.release.xcconfig"; path = "Target Support Files/Pods-FindPictureFlickr/Pods-FindPictureFlickr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232FCAA5B7633C16AE56E8D5 /* Pods_FindPictureFlickr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A547B1E2593A14FD13EE0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23556B71E1BB3CD2C17B437F /* Pods_FindPictureFlickr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5C1C39462790A7B400748A14 = {
 			isa = PBXGroup;
 			children = (
 				5C1C39512790A7B400748A14 /* FindPictureFlickr */,
 				5C1C39502790A7B400748A14 /* Products */,
+				7C57B2CC62B708673DB35027 /* Pods */,
+				1A547B1E2593A14FD13EE0E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +78,23 @@
 				5C1C39522790A7B400748A14 /* AppDelegate.swift */,
 				5C1C39542790A7B400748A14 /* SceneDelegate.swift */,
 				5C1C39562790A7B400748A14 /* ViewController.swift */,
-				5C1C39582790A7B400748A14 /* Main.storyboard */,
-				5C1C395B2790A7B700748A14 /* Assets.xcassets */,
+				5C5F98F3279468000052F6E8 /* SaveModel.swift */,
+				5CB845642791DCB3006E2852 /* Model.swift */,
+				5CB8456927921AC7006E2852 /* NetworkManager.swift */,
+				5C1C39732790B26D00748A14 /* TableViewCell.swift */,
 				5C1C395D2790A7B700748A14 /* LaunchScreen.storyboard */,
 				5C1C39602790A7B700748A14 /* Info.plist */,
 			);
 			path = FindPictureFlickr;
+			sourceTree = "<group>";
+		};
+		7C57B2CC62B708673DB35027 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B456883FABF5EEC20A7DE140 /* Pods-FindPictureFlickr.debug.xcconfig */,
+				B7BD5DCFBBAFC456DF151E91 /* Pods-FindPictureFlickr.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C1C39632790A7B700748A14 /* Build configuration list for PBXNativeTarget "FindPictureFlickr" */;
 			buildPhases = (
+				668540A727C194A31E40CBD9 /* [CP] Check Pods Manifest.lock */,
 				5C1C394B2790A7B400748A14 /* Sources */,
 				5C1C394C2790A7B400748A14 /* Frameworks */,
 				5C1C394D2790A7B400748A14 /* Resources */,
+				83802EE212643CC10E3E713B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,19 +157,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1C395F2790A7B700748A14 /* LaunchScreen.storyboard in Resources */,
-				5C1C395C2790A7B700748A14 /* Assets.xcassets in Resources */,
-				5C1C395A2790A7B400748A14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		668540A727C194A31E40CBD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindPictureFlickr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83802EE212643CC10E3E713B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindPictureFlickr/Pods-FindPictureFlickr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindPictureFlickr/Pods-FindPictureFlickr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindPictureFlickr/Pods-FindPictureFlickr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C1C394B2790A7B400748A14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB8456A27921AC7006E2852 /* NetworkManager.swift in Sources */,
+				5CB845652791DCB3006E2852 /* Model.swift in Sources */,
+				5C5F98F4279468000052F6E8 /* SaveModel.swift in Sources */,
 				5C1C39572790A7B400748A14 /* ViewController.swift in Sources */,
+				5C1C39742790B26D00748A14 /* TableViewCell.swift in Sources */,
 				5C1C39532790A7B400748A14 /* AppDelegate.swift in Sources */,
 				5C1C39552790A7B400748A14 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +222,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C1C39582790A7B400748A14 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C1C39592790A7B400748A14 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C1C395D2790A7B700748A14 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +351,7 @@
 		};
 		5C1C39642790A7B700748A14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B456883FABF5EEC20A7DE140 /* Pods-FindPictureFlickr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		5C1C39652790A7B700748A14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7BD5DCFBBAFC456DF151E91 /* Pods-FindPictureFlickr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -8,32 +8,31 @@
 import UIKit
 
 class NetworkManager {
-    
 
-
-    func fetchData(url: String, completion: @escaping (_ answer: [Photo]) -> ()) {
+    func fetchData(url: String, completion: @escaping (_ answer: [Photo], _ error: String?) -> ()) {
 
         guard let url = URL(string: url) else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 print(error)
+                completion([Photo](), error.localizedDescription)
                 return
             }
             guard let data = data else { return }
 
             do {
-                let json = try JSONDecoder().decode(Json.self, from: data)
+                let json = try JSONDecoder().decode(ApiModel.self, from: data)
                 let photos = json.photos.photo
-                completion(photos)
+                completion(photos, nil)
             } catch let error {
                 print("error json \(error)")
+                completion([Photo](), error.localizedDescription)
             }
 
         }.resume()
     }
     
     var imageCache = NSCache<NSString, UIImage>()
-    
     func downloadImage(url: URL, completion: @escaping (UIImage?) -> Void) {
         
         if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {

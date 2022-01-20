@@ -36,7 +36,7 @@ class TableViewCell: UITableViewCell {
         }
         
         contentView.addSubview(foundedImage)
-//        foundedImage.image = UIImage(named: "qwe")
+        foundedImage.contentMode = .scaleAspectFit
         foundedImage.snp.makeConstraints { (make) in
             make.leading.bottom.top.equalToSuperview()
             make.width.equalTo(screenWidth / 2)

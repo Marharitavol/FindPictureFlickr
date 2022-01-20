@@ -11,10 +11,11 @@
 		5C1C39532790A7B400748A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39522790A7B400748A14 /* AppDelegate.swift */; };
 		5C1C39552790A7B400748A14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39542790A7B400748A14 /* SceneDelegate.swift */; };
 		5C1C39572790A7B400748A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39562790A7B400748A14 /* ViewController.swift */; };
-		5C1C395F2790A7B700748A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C395D2790A7B700748A14 /* LaunchScreen.storyboard */; };
 		5C1C39742790B26D00748A14 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C39732790B26D00748A14 /* TableViewCell.swift */; };
 		5C5F98F4279468000052F6E8 /* SaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F98F3279468000052F6E8 /* SaveModel.swift */; };
-		5CB845652791DCB3006E2852 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB845642791DCB3006E2852 /* Model.swift */; };
+		5C99FE4A2795DC4D0057B711 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99FE492795DC4D0057B711 /* RealmModel.swift */; };
+		5C99FE532795E2BD0057B711 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99FE522795E2BD0057B711 /* RealmManager.swift */; };
+		5CB845652791DCB3006E2852 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB845642791DCB3006E2852 /* ApiModel.swift */; };
 		5CB8456A27921AC7006E2852 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8456927921AC7006E2852 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +25,12 @@
 		5C1C39522790A7B400748A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C1C39542790A7B400748A14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5C1C39562790A7B400748A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C1C395E2790A7B700748A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C1C39602790A7B700748A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C1C39732790B26D00748A14 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5C5F98F3279468000052F6E8 /* SaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveModel.swift; sourceTree = "<group>"; };
-		5CB845642791DCB3006E2852 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5C99FE492795DC4D0057B711 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		5C99FE522795E2BD0057B711 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		5CB845642791DCB3006E2852 /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
 		5CB8456927921AC7006E2852 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B456883FABF5EEC20A7DE140 /* Pods-FindPictureFlickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindPictureFlickr.debug.xcconfig"; path = "Target Support Files/Pods-FindPictureFlickr/Pods-FindPictureFlickr.debug.xcconfig"; sourceTree = "<group>"; };
 		B7BD5DCFBBAFC456DF151E91 /* Pods-FindPictureFlickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindPictureFlickr.release.xcconfig"; path = "Target Support Files/Pods-FindPictureFlickr/Pods-FindPictureFlickr.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,17 +77,50 @@
 		5C1C39512790A7B400748A14 /* FindPictureFlickr */ = {
 			isa = PBXGroup;
 			children = (
-				5C1C39522790A7B400748A14 /* AppDelegate.swift */,
-				5C1C39542790A7B400748A14 /* SceneDelegate.swift */,
-				5C1C39562790A7B400748A14 /* ViewController.swift */,
-				5C5F98F3279468000052F6E8 /* SaveModel.swift */,
-				5CB845642791DCB3006E2852 /* Model.swift */,
-				5CB8456927921AC7006E2852 /* NetworkManager.swift */,
-				5C1C39732790B26D00748A14 /* TableViewCell.swift */,
-				5C1C395D2790A7B700748A14 /* LaunchScreen.storyboard */,
+				5C5B317A279849CB00B6D693 /* MainVC */,
+				5C5B317C27984A0A00B6D693 /* Data */,
+				5C5B318627984CD600B6D693 /* Application */,
 				5C1C39602790A7B700748A14 /* Info.plist */,
 			);
 			path = FindPictureFlickr;
+			sourceTree = "<group>";
+		};
+		5C5B317A279849CB00B6D693 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C39562790A7B400748A14 /* ViewController.swift */,
+				5C1C39732790B26D00748A14 /* TableViewCell.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		5C5B317C27984A0A00B6D693 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5CB8456927921AC7006E2852 /* NetworkManager.swift */,
+				5C99FE522795E2BD0057B711 /* RealmManager.swift */,
+				5C5B317D27984A2500B6D693 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5C5B317D27984A2500B6D693 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5CB845642791DCB3006E2852 /* ApiModel.swift */,
+				5C99FE492795DC4D0057B711 /* RealmModel.swift */,
+				5C5F98F3279468000052F6E8 /* SaveModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C5B318627984CD600B6D693 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C39522790A7B400748A14 /* AppDelegate.swift */,
+				5C1C39542790A7B400748A14 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		7C57B2CC62B708673DB35027 /* Pods */ = {
@@ -156,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1C395F2790A7B700748A14 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB8456A27921AC7006E2852 /* NetworkManager.swift in Sources */,
-				5CB845652791DCB3006E2852 /* Model.swift in Sources */,
+				5C99FE4A2795DC4D0057B711 /* RealmModel.swift in Sources */,
+				5CB845652791DCB3006E2852 /* ApiModel.swift in Sources */,
 				5C5F98F4279468000052F6E8 /* SaveModel.swift in Sources */,
 				5C1C39572790A7B400748A14 /* ViewController.swift in Sources */,
+				5C99FE532795E2BD0057B711 /* RealmManager.swift in Sources */,
 				5C1C39742790B26D00748A14 /* TableViewCell.swift in Sources */,
 				5C1C39532790A7B400748A14 /* AppDelegate.swift in Sources */,
 				5C1C39552790A7B400748A14 /* SceneDelegate.swift in Sources */,
@@ -220,17 +256,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5C1C395D2790A7B700748A14 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C1C395E2790A7B700748A14 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5C1C39612790A7B700748A14 /* Debug */ = {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Json: Decodable {
+struct ApiModel: Decodable {
     let photos: Photos
 }
 

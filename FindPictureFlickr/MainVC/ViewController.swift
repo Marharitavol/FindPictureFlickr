@@ -102,9 +102,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func showError() {
+    func showError(error: String) {
         
-        let alert = UIAlertController(title: nil, message: "Image not found", preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: error, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okButton)
         present(alert, animated: true, completion: nil)
@@ -140,7 +140,7 @@ extension ViewController: UISearchBarDelegate {
         networkManager.fetchData(url: searchUrl) { (photo, error)  in
             guard error == nil else {
                 DispatchQueue.main.async {
-                    self.showError()
+                    self.showError(error: error!)
                     self.activityIndicatorView.isHidden = true
                     self.activityIndicatorView.stopAnimating()
                 }

@@ -23,7 +23,11 @@ class NetworkManager {
             do {
                 let json = try JSONDecoder().decode(ApiModel.self, from: data)
                 let photos = json.photos.photo
-                completion(photos, nil)
+                if photos.isEmpty {
+                    completion(photos, "Picture not found")
+                } else {
+                    completion(photos, nil)
+                }
             } catch let error {
                 print("error json \(error)")
                 completion([Photo](), error.localizedDescription)
